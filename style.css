@@ -1,0 +1,18 @@
+:root{
+    --eclipse:#232A31;
+    --fontes-claras: #FFF;
+    --fontes-cinza-claro:#70747A;
+    --fontes-cinza-escuro: #333;
+    --background-botoes:#2CC76A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}

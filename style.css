@@ -4,6 +4,11 @@
     --fontes-cinza-claro:#70747A;
     --fontes-cinza-escuro: #333;
     --background-botoes:#2CC76A;
+    --background-botoeshover:#0ba147;
+    --padrao:#202b34;
+    --branco:#ffffff;
+    --recomendado:#f45c57;
+    --busca:#34454e;
 }
 
 *{
@@ -15,4 +20,300 @@
 body{
     font-family: 'Montserrat', sans-serif;
     
+}
+
+/*header*/
+
+.cabecalho{
+    width: 100%;
+    height: 90px;
+    background-color: var(--eclipse);
+    position: relative;
+}
+.cabecalho img{
+    width: 50px;
+    height: 50px;
+    margin: 20px ;
+
+}
+.navbar{
+    position: relative;
+    
+}
+.navbar ul{
+    position: absolute;
+    display: inline-block;
+    right: 60px;
+}
+.navbar li{
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 30px;
+    transition: 1s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar li a{
+    text-decoration: none;
+    color: var(--fontes-claras);
+}
+
+.navbar li a:hover{
+    color: var(--fontes-cinza-claro);
+    transition: .5s;
+}
+
+.navbar .btn-login{
+    background-color: var(--background-botoes);
+    padding: 13px 20px;
+    border-radius:7px;
+}
+.navbar .btn-login:hover{
+    background-color: var(--background-botoeshover);
+    color: white;
+}
+
+/*apresentacao*/
+
+#apresentacao{
+    background-image: url('./img/mainbanner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:30em;
+}
+
+ .sobre-apresentacao{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 200px;
+}
+
+.sobre-apresentacao h1{
+    color: var(--fontes-claras);
+    font-size: 44px;
+    font-weight: 700;
+}
+.sobre-apresentacao h2{
+    color: var(--fontes-claras);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*beneficios*/
+
+#beneficios{
+    width: 100%;
+    padding: 160px 0;
+}
+#cont-preco h1{
+
+    color: var(--fontes-cinza-escuro);
+    font-size: 40px;
+    padding-bottom: 30px;
+
+}
+#cont-preco h2{
+    color: var(--fontes-cinza-claro);
+    font-weight: 400;
+}
+.cont-beneficio{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    position: relative;
+    margin: 0 auto;
+}
+.beneficio1{
+    width: 33%;
+    position: relative;
+    text-align: center;
+
+}
+
+.beneficio1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.beneficio1 h2{
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: var(--fontes-cinza-escuro);
+}
+.beneficio1 p{
+    color: var(--fontes-cinza-claro);
+}
+
+
+/*planos e precos*/
+#cont-preco{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    
+    text-align: center;
+}
+.cont-planos{
+    margin: 10em auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+.planos{
+    width: 20%;
+    background-color:#c6c8cc;
+}
+.preco{
+    background-color: var(--background-botoes);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    margin:-60px auto;
+    line-height: 120px;
+    color: var(--fontes-claras);
+    list-style: none;
+}
+
+.tipo-plano{
+    background-color:var(--padrao);
+    padding: 80px 0px 20px 0px;
+    color: var(--branco);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.pacote{
+
+    padding: 15px 0px;
+}
+
+.selecionar{
+    background-color: var(--background-botoes);
+    padding: 20px 0px;
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cont-planos ul{
+    list-style: none;
+}
+
+.recomendado{
+    background-color: var(--recomendado);
+}
+
+/*dominio*/
+
+#dominio{
+    background-color: var(--busca);
+    text-align: center;
+    padding: 6em;
+}
+.cont-dominio{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+.cont-dominio h1{
+    color: var(--fontes-claras);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.cont-dominio h2{
+    color:var(--fontes-claras);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#dominio input[type=text]{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border:none;
+    font-size: 22px;
+    margin-bottom: 30px;
+    
+}
+#dominio input[type=button]{
+
+    background-color: var(--background-botoes);
+    border: none;
+    color: var(--branco);
+    padding: 20px 50px;
+    border-radius: 7px;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/*contato*/
+
+.cont-contato{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.cont-contato h1{
+    margin: 60px 0px;
+    font-size: 35px;
+    color: var(--padrao);
+}
+.cont-contato h2{
+    color: var(--fontes-cinza-claro);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.cont-contato form{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+.cont-contato input[type=text], .cont-contato input[type=email]{
+    width: 40%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid var(--fontes-cinza-claro);
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 30px 0px;
+}
+.cont-contato textarea{
+    display: block;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+}
+
+.cont-contato input[type=button]{
+    background-color: var(--background-botoes);
+    border: none;
+    color: var(--branco);
+    padding: 10px 50px;
+    border-radius: 7px;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    color: var(--busca);
+    font-weight: 600;
+    margin: 30px 0px;
 }

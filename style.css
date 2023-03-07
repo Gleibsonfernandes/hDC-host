@@ -36,9 +36,13 @@ body{
     margin: 20px ;
 
 }
+
 .navbar{
     position: relative;
     
+}
+.navbar .img-bar{
+    display: none;
 }
 .navbar ul{
     position: absolute;
@@ -128,24 +132,27 @@ body{
     position: relative;
     margin: 0 auto;
 }
-.beneficio1{
+.beneficio{
     width: 33%;
     position: relative;
     text-align: center;
-
+    
+}
+.beneficio ul{
+    list-style: none;
 }
 
-.beneficio1 img{
+.beneficio ul li img{
     width: 100px;
     height: 100px;
 }
 
-.beneficio1 h2{
+.beneficio ul li h2{
     text-transform: uppercase;
     margin: 30px 0;
     color: var(--fontes-cinza-escuro);
 }
-.beneficio1 p{
+.beneficio ul li p{
     color: var(--fontes-cinza-claro);
 }
 
@@ -316,4 +323,120 @@ footer{
     color: var(--busca);
     font-weight: 600;
     margin: 30px 0px;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 1066px){
+  
+    .cont-planos{
+        margin: 4em auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+        width: 80%;
+        
+    }
+    .planos{
+        width: 45%;
+        margin-top: 100px;
+        
+    }  
+    
+   
+}
+
+@media screen and (max-width: 810px){
+
+    .planos{
+        width: 60%;
+        margin-top: 100px;
+        margin: 100px auto 0 auto;
+    } 
+
+}
+
+@media screen and (max-width: 750px){
+
+    #beneficios{
+        
+        width: 100%;
+        padding: 160px 0;
+    }
+    #cont-preco h1{
+    
+        color: var(--fontes-cinza-escuro);
+        font-size: 40px;
+        padding-bottom: 30px;
+    
+    }
+    #cont-preco h2{
+        color: var(--fontes-cinza-claro);
+        font-weight: 400;
+    }
+    .cont-beneficio{
+        flex-wrap: wrap;
+    }
+    .beneficio{
+        width: 40%;
+        
+    }
+   
+    .beneficio ul{
+        list-style: none;
+    }
+
+    .planos{
+        width: 80%;
+       
+    } 
+
+    .cont-dominio {
+       
+        width: 100%;
+
+    }
+
+    .cont-dominio {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #dominio {
+        padding: 3em;
+    }
+    
+    .cont-contato {
+        width: 100%;
+    }
+    .cont-contato form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar .img-bar{
+        display: inline;
+        right: 0px;
+        position: absolute;
+    }
+    .beneficio{
+        width: 70%;
+        margin: 30px 0px;
+        
+    }
+    .cont-planos{
+        width: 100%;
+    }
+    .planos{
+        width: 80%;
+       
+    } 
+    #dominio {
+        padding: 1em;
+    }
 }
